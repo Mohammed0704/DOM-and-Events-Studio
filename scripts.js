@@ -5,6 +5,7 @@ window.addEventListener("load", function() {
 
     takeoff.addEventListener("click", function () {
         console.log("I clicked the button!");
+        window.confirm("Confirm that the shuttle is ready for takeoff.")
     });
 });
 
