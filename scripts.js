@@ -5,7 +5,14 @@ window.addEventListener("load", function() {
 
     takeoff.addEventListener("click", function () {
         console.log("I clicked the button!");
-        window.confirm("Confirm that the shuttle is ready for takeoff.")
+       let windowConfirm = window.confirm("Confirm that the shuttle is ready for takeoff.")
+       if (windowConfirm) {
+        document.getElementById("flightStatus") = "Shuttle in flight."
+        document.getElementById("shuttleBackground").style.backgroundColor = "blue";
+        let height = document.getElementById("spaceShuttleHeight");
+        num = height + 10000;
+        height = num;
+       }
     });
 });
 
