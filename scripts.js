@@ -20,6 +20,10 @@ window.addEventListener("load", function() {
     //landing button
     land.addEventListener("click", function() {
         console.log("Land button works");
+        window.alert("The shuttle is landing. Landing gear engaged.")
+        document.getElementById("flightStatus").innerHTML = "The shuttle has landed."
+        document.getElementById("shuttleBackground").style.backgroundColor = "green";
+        height.innerHTML = 0;
     });
 
 });
