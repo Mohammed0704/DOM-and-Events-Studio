@@ -2,7 +2,9 @@
 // Remember to pay attention to page loading!
 window.addEventListener("load", function() {
     const takeoff = document.getElementById("takeoff");
+    const land = document.getElementById("landing");
 
+    //takeoff button
     takeoff.addEventListener("click", function () {
         console.log("I clicked the button!");
        let windowConfirm = window.confirm("Confirm that the shuttle is ready for takeoff.")
@@ -14,6 +16,12 @@ window.addEventListener("load", function() {
         height.innerHTML = numHeight + 10000;
        }
     });
+
+    //landing button
+    land.addEventListener("click", function() {
+        console.log("Land button works");
+    });
+
 });
 
 
