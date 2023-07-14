@@ -23,6 +23,7 @@ window.addEventListener("load", function() {
         window.alert("The shuttle is landing. Landing gear engaged.")
         document.getElementById("flightStatus").innerHTML = "The shuttle has landed."
         document.getElementById("shuttleBackground").style.backgroundColor = "green";
+        let height = document.getElementById("spaceShuttleHeight");
         height.innerHTML = 0;
     });
 
